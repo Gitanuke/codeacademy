@@ -15,4 +15,4 @@ $i=1;
 do {
     echo $i . '. ' . $m[$i - 1] . '<br>';
     $i++;
-} while($i>=count ($m));
+} while($i<=count ($m));
