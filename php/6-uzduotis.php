@@ -42,7 +42,7 @@ function getInfo($asmenys){
 
 <table>
     <tr>
-        <th> Nr</th>
+        <th>Nr</th>
         <th>Vardas</th>
         <th>Pavarde</th>
         <th>Maistas</th>
