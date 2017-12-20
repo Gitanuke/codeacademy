@@ -42,3 +42,21 @@ function sumaisyti ($d)
 }
     echo json_encode ($nms) . '<br>';
     echo json_encode($nm4) . '<br>';
+
+    //$m = [3,6,1];
+//1) $m [0] = 4; //[4,6,1]
+//2) a) $m [] = 20; [4,6,1,20] dar viena paskutini elementa pridedam;
+//b) $m [count ($m)] = 20;
+//function tus ($m){
+//$t = [];
+//}
+//for ($i=0; $i <count ($m)); $i++){
+    //$t [] = strtoupper($m [$i]);
+
+    //return $t;
+
+    //echo json_encode(tus ['labas rytas']})
+//
+
+
+//
