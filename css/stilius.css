@@ -53,3 +53,21 @@ font-weight:bold;
     text-align: center;
     width:1%;
 }
+
+.veliava {
+    width:300px;
+    height:200px;
+    border-collapse: collapse;
+}
+
+.veliava th {
+    background-color:yellow;
+}
+
+.veliava td {
+    background-color:green;
+}
+
+.veliava td1 {
+    background-color: red;
+}
