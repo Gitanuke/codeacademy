@@ -25,6 +25,8 @@ class OtherClass {
 }
 
 class ChildClass extends OtherClass { //klaida nes yra final funkcija, si funkcija gali but nereikalinga, nebent didelem programom
+
+
     public function moreTesting (){
         echo 'labas';
 

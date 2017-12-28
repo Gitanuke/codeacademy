@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
     <label><b>Vardas:</b> </label><input name="vardas" type="text"><br>
     <label><b>Pavarde: </b></label><input name="pavarde" type="text" ><br>
     <label><b>Maistas:</b> </label>
-    <select name="mmm">
+    <select name="maistas">
         <option value="zuvis">Zuvis</option>
         <option value="mesa">Mesa</option>
         <option value="vegetaras">Vegetaras</option>

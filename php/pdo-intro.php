@@ -29,7 +29,7 @@ $res->closeCursor();
 $sql = "select * from auto where aut_kaina>2000";
 $res = $cnn->query($sql);
 echo '<table>';
-while ($row=$res->fetch()){
+while ($row=$res->fetch()){ //fetch ima po viena eilute, isima duomenis, eilute row yra masyvas
     echo '<tr>';
     echo '<td>' . $row['aut_gamintojas'] . '</td>';
     echo '<td>' . $row['aut_modelis'] . '</td>';
