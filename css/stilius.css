@@ -1,4 +1,5 @@
 .para{
+    width
 font-weight:bold;
 }
 
@@ -7,14 +8,14 @@ font-weight:bold;
      padding: 10px 20px ;
  }
 
-.lentele-1 tr > td:first-child, .lentele-1 .tr> .td:first-child {
+.lentele-1 tr > td:first-child, .lentele-1 .tr {
     text-align: center;
     width:1%;
 }
 
 .lentele-1 {
     border-collapse: collapse;
-    width:50%;
+    width:20%;
     /*komentaras*/
 }
 .lentele-1 th {
@@ -27,7 +28,7 @@ font-weight:bold;
 }
 
 
-.lentele-1 tr > td:first-child, .lentele-1 .tr> .td:first-child {
+.lentele-1 tr > td:first-child, .lentele-1 .tr .td {
     text-align: center;
     width:1%;
 
