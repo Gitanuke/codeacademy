@@ -1,0 +1,55 @@
+
+<!--
+Sukurkite HTML dokumentą, kurio <head> skiltyje būtų aprašytas stilius. Visas dokumento fonas ‐ paveikslėlis,
+teksto dydis 40px ir balta spalva. Dokumente turėtų būti išvesta 3x3 lentelė sudaryta iš <div>elementų, t.y.
+ Div langeliai ‐ div eilutėse, o šios ‐ pagrindiniam div elemente. Eilutės lentelėje turi būti su paraštėmis 5px,
+  langeliai lentelėse savo ruožtu taip pat su 5px paraštėmis. Langelių fono spalva turi būti lightgreen.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    html{
+        background:url("/images/paris.jpg") no-repeat;
+        background-size: cover;
+    }
+
+ .lentele {
+     font-size:40px;
+     color:white;
+     border-spacing: 0px 5px;
+}
+
+ .tr  {
+display:table-row;
+ }
+
+ .td {
+     padding: 5px 5px;
+     background-color: lightgreen;
+     display:table-cell;
+ }
+
+</style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="lentele" >
+    <div class="tr">
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+    <div class="tr">
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+    <div  class="tr">
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div  class="td">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+</body>
+</html>

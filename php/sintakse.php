@@ -53,10 +53,8 @@ echo $GLOBALS ['h'] . "<br>";
 echo $_SERVER['PHP_SELF'] . "<br>";
 echo $_SERVER ['HTTP_HOST'] . "<br>;
 
-define ('konst', 'labas'); //konstante
+define ('konst', 'labas'); 
 echo konst . "<br>";
-
-//const konst = 'labas' ; //sintakse klaseje
 
 ?>
 </body>

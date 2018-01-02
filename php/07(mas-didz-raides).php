@@ -12,8 +12,9 @@ foreach ($m as $sv){
 var_dump($m);
 
 
-/*sm=['a'=>1, 'b'=>2]
-foreach ($sm as $key => $value)
+/*m=['a'=>1, 'b'=>2]
+foreach ($m as $key => $value)
+m[$key] = ucfirst(strtoupper($value));
 */
 /*
 Sukurkite php skripta, kuriame butu aprasytas asociatybini masyvas is 5 elementu - teksto eiluciu.
