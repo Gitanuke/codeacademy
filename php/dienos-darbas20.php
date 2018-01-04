@@ -1,5 +1,5 @@
 <?php
-function masina ($a, $b, $c){
+, function masina ($a, $b, $c){
     return [
         "gamintojas" => ucfirst (strtolower($a)),
         "modelis" => ucfirst (strtolower($b)),
@@ -7,7 +7,7 @@ function masina ($a, $b, $c){
     ];
 }
 // masyvas
-$m [0] = masina ("bmw", "320i", "2010");
+$m [0] = masina ("bmw","320i", "2010");
 $m [1] = masina ( "infinity", "fx37", "2009");
 $m [2] = masina ("mitsubishi", "grandis", "2005");
 
