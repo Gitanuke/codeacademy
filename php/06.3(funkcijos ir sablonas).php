@@ -9,5 +9,5 @@ function parametrai ($n, $sur, $maistas){
     return sprintf($sablonas, $n, $sur, $maistas);
 }
 
-$r=  parametrai('Jonas', 'Jonaitis', 'mesa'); // sukuriame person klasės objekto egzempliorių
+$r =  parametrai('Jonas', 'Jonaitis', 'mesa'); // sukuriame person klasės objekto egzempliorių
 echo $r;

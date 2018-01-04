@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#mygtukas') . click(function(){
+var data = $ ('#forma')   .serialize ();
+console.log(JSON.stringify(date));
+                console.log('ajax ivykdo ok');
+
+                $.ajax({ // AJAX call
+                    type: 'GET',
+                    url: 'ajax-backend.php',
+                   // dataType: "json", // AJAX data type
+                    data: data,
+                    success: function(data, textStatus, jqXHR){ // AJAX call success function
+console.log('ajax ivykdo ok')
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){ // AJAX call failure function
+console.log('ajax nepavyko');
+                    }
+                })
+            });
+        });
+        $('#mygtukas2') . click(function(){
+            var data = {
+                'vardas': $('#forma input [name=vardas]').val(),
+                'pav': $('#forma input [name=pavarde]').val(),
+                'gdata': $('#forma input [name=gdata]').val()
+
+            }
+        }
+            console.log('ajax ivykdo ok');
+
+            $.ajax({ // AJAX call
+                type: 'GET',
+                url: 'ajax-backend.php',
+                // dataType: "json", // AJAX data type
+                data: data,
+                success: function(data, textStatus, jqXHR){ // AJAX call success function
+                    console.log('ajax ivykdo ok')
+                    $('#box') .
+                },
+                error: function(jqXHR, textStatus, errorThrown){ // AJAX call failure function
+                    console.log('ajax nepavyko');
+                }
+            })
+        });
+        });
+    </script>
+</head>
+<body>
+<form id="forma">
+    <label>Vardas:</label><input type="text" name="vardas"><br>
+    <label>Pavarde:</label><input type="text" name="pavarde"><br>
+    <label>Gimimo data:</label><input type="text" name="gdata"><br>
+    <input id="mygtukas" type="button" value="Pateikti">
+    <input id="mygtukas2" type="button" value="Pateikti2">
+
+</form>
+<div id="box" style="margin-top:10px;width:200px;height:100px;border:1px solid red;padding:10px;overflow:hidden"></div>
+</body>
+</html>

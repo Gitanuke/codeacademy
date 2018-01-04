@@ -9,5 +9,5 @@ if (!isset ($_SESSION['postoinfo']));
 $_SESSION['postoinfo']= $_POST;
 
 print_r($_POST);
-//header('Location: egzo-forma-imone-forma-html.php');
+//header('Location: imones-forma-html.php');
 ?>
