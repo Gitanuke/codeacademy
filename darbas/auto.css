@@ -9,4 +9,12 @@
 .site-header-top-grid .col .fa-facebook-square {color:#3b5999 }
 .site-header-top-grid .col .fa-twitter-square {color:#55acee }
 .site-header-top-grid .col .fa-google-plus-square {color:#dd4b39 }
-.site-menu {background-color:#4699a0 }
+.site-menu {background-color:#4699a0}
+.site-menu > div { max-width:1200px}
+.site-menu > div ul li a {color:white}
+.site-menu .fa {padding-right: 5px}
+.site-body {max-width:1200px}
+.site-body .site-car-list img {width:120px}
+.site-body .site-car-list thead th {border-top:1px black solid;border-bottom:1px black solid}
+.site-body .site-car-list tfoot th {border-top:1px black solid }
+.site-body .btn {cursor: pointer}
