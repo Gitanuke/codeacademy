@@ -1,6 +1,6 @@
 <?php
 $cnn = new PDO('mysql:host=gitanamac.lt;dbname=test', 'root');
-$res= $cnn->prepare ("insert into auto(aut_gamintojas, aut_modelis, aut_metai, aut_kaina) values
+$res= $cnn->prepare ("insert into darbas(aut_gamintojas, aut_modelis, aut_metai, aut_kaina) values
  (:gamintojas,:modelis,:metai,:kaina)"); //i mysql desim values butinai su :
 $x= $res->execute ([
     ':gamintojas' => $_POST['gamintojas'],
@@ -10,7 +10,7 @@ $x= $res->execute ([
 ]);
 
 
-$sql = "select * from auto";
+$sql = "select * from darbas";
 $res = $cnn->query($sql);
 echo '<table>';
 echo "<th>Gamintojas</th><th>Modelis</th><th>Kaina</th><th>Metai</th>";

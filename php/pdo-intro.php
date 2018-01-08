@@ -1,6 +1,6 @@
 <?php
 $cnn = new PDO('mysql:host=gitanamac.lt;dbname=test', 'root');
-$sql = "select count(*) as cnt from auto";
+$sql = "select count(*) as cnt from darbas";
 $res = $cnn->query($sql);
 while ($row=$res->fetch()){
     echo $row['cnt'] . '<br>';
@@ -9,7 +9,7 @@ while ($row=$res->fetch()){
 }
 $res->closeCursor();
 
-$sql = "select * from auto";
+$sql = "select * from darbas";
 $res = $cnn->query($sql);
 echo '<table>';
 while ($row=$res->fetch()){
@@ -26,7 +26,7 @@ while ($row=$res->fetch()){
 }
 $res->closeCursor();
 
-$sql = "select * from auto where aut_kaina>2000";
+$sql = "select * from darbas where aut_kaina>2000";
 $res = $cnn->query($sql);
 echo '<table>';
 while ($row=$res->fetch()){ //fetch ima po viena eilute, isima duomenis, eilute row yra masyvas
