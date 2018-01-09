@@ -1,42 +1,69 @@
 <?php
-class auto{
-    public$message='';
-    public$cnn=false;
-    function __construct(){
-        $this->message = "Prisijungimas pavyko";
+class auto
+{
+    public $message = '';
+    private $cnn = false;
+    private $host = 'gitanamac.lt';
+    private $dbname = 'test';
+    private $userid = 'root';
+
+    function __construct()
+    {
+        $this->message = "Prisijungimas prie DB ";
         try {
-            $this->cnn = new PDO('mysql:host=gitanamac.lt;dbname=test', 'root');
-            $this->cnn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->message .= 'sekmingas';
+            $this->cnn = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->userid);
+            $this->cnn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // allow exceptions
+            $this->message .= 'sėkmingas';
+        } catch (PDOException $e) {
+            $this->message .= 'nesėkmingas: ' . $e->getMessage();
         }
-        catch (PDOException $e){
-                $this->message="Prisijungimas nepavyko:" . $e->getMessage();
+    }
+
+    function getList()
+    {
+        $this->message = "Automobilių sąrašo skaitymas iš DB ";
+        $cars = [];
+        try {
+            $sql = "select * from autonuoma order by aut_gamintojas, aut_modelis";
+            $res = $this->cnn->query($sql);
+            while ($row = $res->fetch()) {
+                $cars[] = [
+                    'id' => $row['auto_id'],
+                    'gamintojas' => $row['aut_gamintojas'],
+                    'modelis' => $row['aut_modelis'],
+                    'metai' => $row['aut_metai'],
+                    'kaina' => $row['aut_kaina'],
+                    'pastabos' => $row['aut_pastabos'],
+                    'nuotrauka' => $row['aut_nuotrauka'],
+                    'mime' => $row['aut_mime']
+                ];
             }
-
-        function getList(){
-            $this->message= "Automobiliu saraso skaitymas is DB";
-            $cars = [];
-            try {
-                $sql= "select "
-
-
-
-
-
-            }
-
-
-
+            $this->message .= "sėkmingas";
+        } catch (PDOException $e) {
+            $this->message .= 'nesėkmingas: ' . $e->getMessage();
+            $cars = false;
         }
-            $res[] = "{$row['asm_vardas']} {$row['asm_pavarde']}, {$row['asm_gdata']} {$post->pasirinkimas}";
+        return $cars;
+    }
 
-
-
+    function delete ($id){
+        $ok = false;
+        $this->message = "Automobilio šalinimas iš DB ";
+        try {
+            $sql = "delete from autonuoma where auto_id=:id";
+            $res = $this->cnn->prepare($sql);
+            $res->execute([':id' => $id]);
+            $this->message .= "sėkmingas";
+            $ok = true;
+        } catch (PDOException $e) {
+            $this->message .= 'nesėkmingas: ' . $e->getMessage();
         }
-
-
+        return $ok;
+    }
 }
-
-$a = new auto ();
-var_dump ($a);
-
+/*
+$a = new auto();
+var_dump($a);
+$b = $a->getList();
+var_dump($b);
+*/

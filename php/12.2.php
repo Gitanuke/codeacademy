@@ -12,8 +12,8 @@ echo "<th>Vardas</th><th>Pavardė</th><th>Gimimo Data</th>";
 
 while ($row=$res->fetch()){ //fetch ima po viena eilute, isima duomenis, eilute row yra masyvas
     echo '<tr>';
-    echo '<td>' . $row['asm_vardas'] . '</td>';
-    echo '<td>' . $row['asm_pavarde'] . '</td>';
+    echo '<td>' . $row['aut_gamintojas'] . '</td>';
+    echo '<td>' . $row['a'] . '</td>';
     echo '<td>' . $row['asm_gdata'] . '</td>';
     echo '</tr>';
 }
