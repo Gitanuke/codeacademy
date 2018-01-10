@@ -35,8 +35,9 @@ else if (isset ($_POST['update-form'])) {
 else if (isset ($_POST['rent-form'])) {
     include 'auto-rent-form.php';
 }
-?>
-    </table>d
+else include 'auto-update-form.php';
+    ?>
+
 </div>
 </body>
 </html>

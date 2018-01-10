@@ -1,7 +1,7 @@
 <?php
 include 'auto.php';
-$auto= new auto();
-$cars=$auto->getList();
+$auto = new auto();
+$cars = $auto->getList();
 ?>
 
 <!DOCTYPE html>
@@ -26,36 +26,7 @@ $cars=$auto->getList();
 </head>
 <body>
 <div class="container-flex">
-    <div class="site-header">
-        <table class="mx-auto w-100">
-            <tr>
-                <td><img class="site-logo" src="http://gitanamac.lt/darbas/images/auto.png"></td>
-                <td>
-                    <h1 class="site-title">Automobilių nuoma 7/24</h1>
-                <div class="row site-header-top-grid">
-                    <div class="col p-0"><button class="btn m-0 p-0 pb-1 pr-2"><i class="fa fa-phone pr-1" aria-hidden="true"></i>+370 601 55442</button></div>
-                    <div class="col p-0 p1-1"><a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
-                    <div class="col p-0 p1-1"><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
-                    <div class="col p-0 p1-1"><a href="https://www.google.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></div>
-                </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-<div class="site-menu">
-    <div class="mx-auto">
-        <nav class="navbar navbar-expand-sm m-0 p-0">
-            <ul class="navbar-nav nav-pills">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/darbas"><i class="fa fa-home" aria-hidden="true"></i>Titulinis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/darbas/auto-actions.php"><i class="fa fa-car" aria-hidden="true"></i>Pridėti naują automobilį</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+    <?php include 'auto-header.php' ?>
     <div class="mx-auto site-body">
         <form action="auto-actions.php" method="post">
         <table class="table table-responsive table-striped mt-1 site-car-list">
