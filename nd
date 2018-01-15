@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Mon, 15 Jan 2018 15:48:11 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Apie Mane</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+  </head>
+  <body>
+  <div class="container">
+<h1>Apie Mane</h1>
+<p><img class="img-right"src="images/Gita.jpg" width="100" height="100" alt="Gita aerial view " style="float:right" hspace="5">
+<b>Vardas Pavarde</b>: Gitana Maculeviciute.</p>
+<p><b>Amzius</b>: 29 metai.</p>
+<p><b>Issilavinimas</b>: Aukstasis.</p>
+<p><b>Lytis</b>: Moteris.</p> 
+<br>
+<div align="center">
+<div class="box">
+<p>Esu igijusi Psichologijos bakalauro laipsni, 2017-ais metais igijau Rinkodaros magistro laispni. 2018-aisiais mokinuosi programavima, 
+kadangi siekiu teikti svetainiu kurimo ir marketingo paslaugas.</p></div></div>
+
+<h2>Kalbos</h2>
+<div class="table">
+<div class="tr">
+<div class="th">Kalba</div>
+<div class="th">Rastine</div>
+<div class="th">Zodine</div>
+</div>
+<div class="tr">
+<div class="td">lietuviu</div>
+<div class="td">+</div>
+<div class="td">+</div>
+</div>
+<div class="tr">
+<div class="td">anglu</div>
+<div class="td">+</div>
+<div class="td">+</div>
+</div>
+<div class="tr">
+<div class="td">rusu</div>
+<div class="td">+</div>
+<div class="td">+</div>
+</div>
+</div>
+
+<h3>Megstami filmai:</h3>
+<ul>
+<li><a href="https://lt.wikipedia.org/wiki/Ku%C5%BEdesi%C5%B3_sala_(filmas)"> Kuzdesiu sala</a></li>
+<li><a href="http://www.lrt.lt/televizija/anonsai/18200/elito-kinas-tukstanti-kartu-labanakt-tusen-ganger-god-natt-a-thousand-times-good-night">Tukstanti kartu labanakt</a></li>
+<li><a href="https://filmux.org/64-saules-asaros-tears-of-the-sun-2003.html">Saules asaros</a></li>
+</ul>
+</div>
+  </body>
+</html>
