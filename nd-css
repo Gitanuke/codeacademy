@@ -1,0 +1,23 @@
+html{background-color:#efefef; background-size: cover;}
+.container {width:900px; float:center;padding-left:20px; background-color:#fff;}
+.table {display:table; width:100px;border-spacing: 0px 5px; border-collapse:collapse; }
+.tr {display: table-row; padding: 10px; border: solid #e8e8e8; }
+.td {display: table-cell; padding: 10px; border: solid #e8e8e8; padding: 5px 5px; }
+.th {display: table-cell;color:black; background-color: grey; font-size:16px;padding: 5px 5px}
+h1 {font-size: 28px; text-align:center; font-color:red;}
+
+.img-right {
+	float: right;
+	padding: 4px;
+	border: 1px solid #DDDDDD;
+    border-radius:100px;
+}
+
+.box {
+width: 800px;
+border: 2px solid #DDDDDD;
+height: 100px;
+padding-left:5px;
+float:center;
+position: relative;
+}
