@@ -1,2 +1,0 @@
-SQL užklausa:
-SELECT * FROM `Imones` ORDER BY `Imones`.`kliento_registravimo_data` DESC limit 0,5
