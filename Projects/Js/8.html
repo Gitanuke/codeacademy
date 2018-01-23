@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/Projects/Js/style1.css"/>
+<style>
+    #app{
+        background:silver;
+    }
+
+</style>
+
+    <script>
+    function gorainbow(){
+        var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+        var p = document.getElementById("position").value;
+        document.body.style.background = rainbow [p];
+}
+
+function gorainbow_random (){
+        var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+        var r = Math.floor(8*Math.random());
+        document.body.style.background = rainbow [r];
+}
+    </script>
+
+</head>
+
+<body>
+;<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div id="app">
+                <input type="number" id="position" placeholder="pozicija" value=""/>
+                    <button id="Start" onclick="gorainbow()">Start</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

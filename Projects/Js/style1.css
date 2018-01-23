@@ -1,0 +1,55 @@
+.mystyle
+{
+    background-color: pink;
+}
+
+.no-padding{
+    padding:0px;
+}
+
+#plugin-wrapper{
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    color:#FFF;
+    background: #fff;
+}
+
+body{
+    background: url("/Projects/Js/images/paris.jpg") no-repeat;
+    background-size: cover;
+}
+
+.special-font {
+    font-family: 'Macondo', cursive;
+}
+
+#app{
+
+    background:#dddddd;
+    border:3px solid #ffffff;
+    border-radius: 10px;
+    padding:15px;
+}
+
+#app1{
+
+    background:#dddddd;
+    border:3px solid #ffffff;
+    border-radius: 10px;
+    padding:15px;
+}
+
+#app_table{
+    width:100%;
+}
+
+.container{
+    padding-top:50px;
+}
+
+#result{
+    font-size:29px;
+
+
+}

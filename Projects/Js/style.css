@@ -1,0 +1,39 @@
+.mystyle
+{
+    background-color: pink;
+}
+
+.no-padding{
+    padding:0px;
+}
+
+#plugin-wrapper{
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    color:#FFF;
+    background: #fff;
+}
+
+body{
+    background: url("/Projects/Js/images/Zakopane.jpg") no-repeat;
+    background-size: cover;
+transition: 3s;
+}
+
+#app{
+
+    background:#e8e8e8;
+    border:3px solid #55acee;
+    border-radius: 10px;
+    padding:15px;
+    height:200px;
+}
+
+#app_table{
+    width:100%;
+}
+
+.container{
+    padding-top:50px;
+}
